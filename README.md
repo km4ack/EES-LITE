@@ -1,6 +1,6 @@
 # Emergency Email Server Lite 
 
-Ham Radio Emergency Email Server Lite for Raspberry Pi
+Winlink Emergency Email Server Lite for Raspberry Pi
 
 ## If you find this code useful, consider donating https://www.paypal.me/km4ack
 
