@@ -8,9 +8,9 @@ Once installed, this code will allow anyone with a wireless device and in range 
 
 ### Requirements:
 
-apache web server
+apache web server - Covered in the installation video
 
-php7
+php7 - Covered in the installation video
 
 Pat Winlink https://www.youtube.com/playlist?list=PL1QTYT4Qo9cY98NFmxrTvtGyWI9pgxtFq
 
