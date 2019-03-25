@@ -32,7 +32,7 @@ include('/var/www/html/config.php');
 <strong>
 <font color="red">
 <div>You <u>MUST</u> know the mobile service provider for the person you are trying to text for your message to be delivered.
-<br>If you are not CERTAIN of the provider, we recommend you <a href="index.php">send an email instead</a>
+<br>If you are not CERTAIN of the provider, we recommend you <a href="email.php">send an email instead</a>
 </font>
 <br><br>
 </div>
