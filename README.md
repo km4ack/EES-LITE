@@ -24,4 +24,10 @@ Finding ARDOP Stations https://youtu.be/Xdp3iovC8ws
 
 ### Demo Video - COMING SOON
 
-### Install Video - COMING SOON
+### Install Video - https://youtu.be/KaEeCq50Mno
+
+## Other Info
+default user - admin
+default passwd - admin
+User webpage - <pi-ip-addy>/email.php
+Operator webpage - <pi-ip-addy>/reply-input.php
