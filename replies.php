@@ -1,6 +1,8 @@
 
 <?php
 //20180403 km4ack
+//this page will list all replies
+//that are currently in the system
 
 
 session_start();
