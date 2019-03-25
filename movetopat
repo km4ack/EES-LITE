@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#move files created by users of EES
+#from /var/www/html/emails
+#to your pat winlink out box for sending
+#over the air.
+#20180406 km4ack
+#20190106 edited by kf7itf
+#script should be run by cron every
+#minute.
+
+
+#sets the MYCALL variable by reading the info from ~/.wl2k/config.json file for the configured operator.
+MYCALL=$(awk '/"mycall": "/{print}' $HOME/.wl2k/config.json |grep -o -P '(?<=mycall": ").*(?=",)')
+
+CHECK=$(ls /var/www/html/emails/)
+
+#check if files are in directory
+if [ -z "$CHECK" ]
+then
+#exit if files not found
+exit 0
+else
+#move the files if found
+sudo mv /var/www/html/emails/*.b2f $HOME/.wl2k/mailbox/$MYCALL/out
+fi
+
+
+
+
+
+exit 0
