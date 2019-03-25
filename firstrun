@@ -16,6 +16,9 @@ chmod +x movetopat
 #make schedule exec
 chmod +x schedule
 
+#create backup of config.php file
+cp /var/www/html/config.php /var/www/html/config.php.org
+
 #remove first run script
 rm /var/www/html/firstrun
 
