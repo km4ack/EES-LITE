@@ -51,7 +51,7 @@ include('/var/www/html/config.php');
 
     </form>
 <br><br>
-<form action="index.php">
+<form action="email.php">
     <input type="submit" value="Compose Email" />
 </form>
 
