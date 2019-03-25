@@ -31,7 +31,7 @@ default user - admin
 
 default passwd - admin
 
-User webpage - <pi-ip-addy>/email.php
+User webpage - pi-ip-addy/email.php
   
-Operator webpage - <pi-ip-addy>/reply-input.php
+Operator webpage - pi-ip-addy/reply-input.php
 
