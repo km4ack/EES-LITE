@@ -8,7 +8,7 @@ Once installed, this code will allow anyone with a wireless device and in range 
 
 ### Requirements:
 
-apache
+apache web server
 
 php7
 
