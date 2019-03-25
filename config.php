@@ -18,7 +18,7 @@ $userpasswd = 'admin';
 //callsign of radio operator ALL UPPERCASE
 //this is used for display purpose only
 //this will not log you into the winlink system
-$callsign = 'KM4ACK';
+$callsign = 'N0CALL';
 
 //Determines if replies are allowed into the system
 //or not. Set to 0 (zero) for no replies. Set to 1 to
