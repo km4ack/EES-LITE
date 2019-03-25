@@ -1,8 +1,10 @@
+<?php
+
 //This page is for login into the system so that
 //replies can be posted.
 //20180407 km4ack
 
-<?php
+
     session_start();
     echo isset($_SESSION['login']);
     if(isset($_SESSION['login'])) {
