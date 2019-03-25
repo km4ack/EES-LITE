@@ -11,6 +11,11 @@ mkdir -p /var/www/html/replies
 chmod 777 /var/www/html/emails
 chmod 777 /var/www/html/replies
 
+#make movetopat exec
+chmod +x movetopat
+#make schedule exec
+chmod +x schedule
+
 #remove first run script
 rm /var/www/html/firstrun
 
