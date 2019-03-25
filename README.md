@@ -5,11 +5,15 @@ EXPERIMENTAL CODE DOWNLOAD AT YOUR OWN RISK!!!! 20190325 KM4ACK
 Ham Radio Emergency Email Server Lite for Raspberry Pi
 
 Requirements:
-apache 
+
+apache
+
 php7
-Pat Winlink
-Working Hotspot (Raspberry Pi capable of serving its own hotspot/access point)
 
-Demo Video - 
+Pat Winlink https://www.youtube.com/playlist?list=PL1QTYT4Qo9cY98NFmxrTvtGyWI9pgxtFq
 
-Install Video - 
+Working Pi Hotspot https://youtu.be/QZtAOLcY5dY
+
+Demo Video - COMING SOON
+
+Install Video - COMING SOON
