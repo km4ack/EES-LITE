@@ -16,6 +16,12 @@ Pat Winlink https://www.youtube.com/playlist?list=PL1QTYT4Qo9cY98NFmxrTvtGyWI9pg
 
 Pi Hotspot https://youtu.be/QZtAOLcY5dY
 
+### Recommended Additions
+
+Progagating Prediction https://youtu.be/jye6JkIPYY0
+
+Finding ARDOP Stations https://youtu.be/Xdp3iovC8ws
+
 ### Demo Video - COMING SOON
 
 ### Install Video - COMING SOON
