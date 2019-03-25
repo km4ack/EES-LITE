@@ -116,7 +116,7 @@ echo "<h3>You message to ".$email." has been queued for sending.</h3>";
 echo "<h3><Strong>".$visitmsg."</h3></strong>";
 ?>
 </div>
-<form action="index.php">
+<form action="email.php">
     <input type="submit" value="Send Another" />
 
 
