@@ -1,5 +1,5 @@
 # EES
 Ham Radio Emergency Email Server for Raspberry Pi
 
-apache and php7 are required
+apache, php7, and Pat Winlink are required
 
