@@ -62,8 +62,8 @@ include('/var/www/html/config.php');
 	<br>
 	<br>
     </form>
-<form action="admin.php">
-    <input type="submit" value="Control Panel" />
+<form action="replies.php">
+    <input type="submit" value="See All Replies" />
 </form>
 <br>
 <br>
