@@ -1,5 +1,12 @@
 # EES
-Ham Radio Emergency Email Server for Raspberry Pi
+Ham Radio Emergency Email Server Lite for Raspberry Pi
 
-apache, php7, and Pat Winlink are required
+Requirements:
+apache 
+php7
+Pat Winlink
+Working Hotspot (Raspberry Pi capable of serving its own hotspot/access point)
 
+Demo Video - 
+
+Install Video - 
