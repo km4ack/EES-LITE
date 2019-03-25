@@ -1,4 +1,4 @@
-# <span style="color:red">Emergency Email Server Lite</span>
+# Emergency Email Server Lite
 
 Ham Radio Emergency Email Server Lite for Raspberry Pi
 
