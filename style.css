@@ -1,0 +1,132 @@
+
+
+body {
+    width:auto;
+    padding: 0;
+    margin-left:20px;
+    
+}
+
+h1 {
+    color: black;
+    margin-left: 0px;    
+}
+
+h2 {
+    color: black;
+    margin-left: 20px;
+}
+
+div {
+    
+    color:black;
+    margin:20px;
+    margin-left:20px;
+    width:70%;
+    height:90%;
+}
+
+#setup {
+    color:red;
+}
+
+#pagelabel {
+    color:red;
+    margin-left:0px;
+}
+
+input {
+    
+    
+    margin-left:20px;
+    color:black;
+}
+
+submit {
+    
+    margin-left:20px;
+    color:black;
+}
+hr {
+    
+    float:left;
+    color:red;
+    background-color:red;
+    height:2px;
+    margin-left:0px;
+    width:80%;
+}
+
+li {
+    margin-left:20px;
+}
+
+table th, td {
+    width:50%;
+}
+table {
+    margin-left:80px;
+}
+
+input[type=submit] {
+    color:black;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:90%;
+    /* ... other rules ... */
+    cursor:pointer;
+    border-radius:4px;
+    border:1px solid #000000
+}
+
+input[type=submit]:hover {
+    background-color:#808080;
+}
+
+button[type=submit] {
+    color:black;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:90%;
+    /* ... other rules ... */
+    cursor:pointer;
+    border-radius:4px;
+    border:1px solid #000000
+    inline:block;
+    height:40px;
+    margin-left:225px;
+    width:80px;
+}
+
+button[type=submit]:hover {
+    background-color:#808080;
+}
+
+input[type=text] {
+    color:black;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:20px;
+    /* ... other rules ... */
+    cursor:pointer;
+    border-radius:4px;
+    border:1px solid #000000
+    width:25px;
+    margin-left:0px;
+}
+
+input[type=password] {
+    color:black;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:20px;
+    /* ... other rules ... */
+    cursor:pointer;
+    border-radius:4px;
+    border:1px solid #000000
+    width:25px;
+    margin-left:4px;
+}
+
+textarea {
+    width:620px;
+    height:250px;
+    border-radius:4px;
+    
+}

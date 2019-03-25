@@ -1,0 +1,287 @@
+3 River Wireless
+
+    10digitphonenumber@sms.3rivers.net
+
+ACS Wireless
+
+    10digitphonenumber@paging.acswireless.com
+
+Alltel
+
+    10digitphonenumber@message.alltel.com
+
+AT&T
+
+    10digitphonenumber@txt.att.net
+
+Bell Canada
+
+    10digitphonenumber@txt.bellmobility.ca
+
+Bell Canada
+
+    10digitphonenumber@bellmobility.ca
+
+Bell Mobility (Canada)
+
+    10digitphonenumber@txt.bell.ca
+
+Bell Mobility
+
+    10digitphonenumber@txt.bellmobility.ca
+
+Blue Sky Frog
+
+    10digitphonenumber@blueskyfrog.com
+
+Bluegrass Cellular
+
+    10digitphonenumber@sms.bluecell.com
+
+Boost Mobile
+
+    10digitphonenumber@myboostmobile.com
+
+BPL Mobile
+
+    10digitphonenumber@bplmobile.com
+
+Carolina West Wireless
+
+    10digit10digitnumber@cwwsms.com
+
+Cellular One
+
+    10digitphonenumber@mobile.celloneusa.com
+
+Cellular South
+
+    10digitphonenumber@csouth1.com
+
+Centennial Wireless
+
+    10digitphonenumber@cwemail.com
+
+CenturyTel
+
+    10digitphonenumber@messaging.centurytel.net
+
+Cingular (Now AT&T)
+
+    10digitphonenumber@txt.att.net
+
+Clearnet
+
+    10digitphonenumber@msg.clearnet.com
+
+Comcast
+
+    10digitphonenumber@comcastpcs.textmsg.com
+
+Corr Wireless Communications
+
+    10digitphonenumber@corrwireless.net
+
+Dobson
+
+    10digitphonenumber@mobile.dobson.net
+
+Edge Wireless
+
+    10digitphonenumber@sms.edgewireless.com
+
+Fido
+
+    10digitphonenumber@fido.ca
+
+Golden Telecom
+
+    10digitphonenumber@sms.goldentele.com
+
+Helio
+
+    10digitphonenumber@messaging.sprintpcs.com
+
+Houston Cellular
+
+    10digitphonenumber@text.houstoncellular.net
+
+Idea Cellular
+
+    10digitphonenumber@ideacellular.net
+
+Illinois Valley Cellular
+
+    10digitphonenumber@ivctext.com
+
+Inland Cellular Telephone
+
+    10digitphonenumber@inlandlink.com
+
+MCI
+
+    10digitphonenumber@pagemci.com
+
+Metrocall
+
+    10digitpagernumber@page.metrocall.com
+
+Metrocall 2-way
+
+    10digitpagernumber@my2way.com
+
+Metro PCS
+
+    10digitphonenumber@mymetropcs.com
+
+Microcell
+
+    10digitphonenumber@fido.ca
+
+Midwest Wireless
+
+    10digitphonenumber@clearlydigital.com
+
+Mobilcomm
+
+    10digitphonenumber@mobilecomm.net
+
+MTS
+
+    10digitphonenumber@text.mtsmobility.com
+
+Nextel
+
+    10digitphonenumber@messaging.nextel.com
+
+OnlineBeep
+
+    10digitphonenumber@onlinebeep.net
+
+PCS One
+
+    10digitphonenumber@pcsone.net
+
+President's Choice
+
+    10digitphonenumber@txt.bell.ca
+
+Public Service Cellular
+
+    10digitphonenumber@sms.pscel.com
+
+Qwest
+
+    10digitphonenumber@qwestmp.com
+
+Rogers AT&T Wireless
+
+    10digitphonenumber@pcs.rogers.com
+
+Rogers Canada
+
+    10digitphonenumber@pcs.rogers.com
+
+Satellink
+
+    10digitpagernumber.pageme@satellink.net
+
+Southwestern Bell
+
+    10digitphonenumber@email.swbw.com
+
+Sprint
+
+    10digitphonenumber@messaging.sprintpcs.com
+
+Sumcom
+
+    10digitphonenumber@tms.suncom.com
+
+Surewest Communicaitons
+
+    10digitphonenumber@mobile.surewest.com
+
+T-Mobile
+
+    10digitphonenumber@tmomail.net
+
+Telus
+
+    10digitphonenumber@msg.telus.com
+
+Tracfone
+
+    10digitphonenumber@txt.att.net
+
+Triton
+
+    10digitphonenumber@tms.suncom.com
+
+Unicel
+
+    10digitphonenumber@utext.com
+
+US Cellular
+
+    10digitphonenumber@email.uscc.net
+
+Solo Mobile
+
+    10digitphonenumber@txt.bell.ca
+
+Sprint
+
+    10digitphonenumber@messaging.sprintpcs.com
+
+Sumcom
+
+    10digitphonenumber@tms.suncom.com
+
+Surewest Communicaitons
+
+    10digitphonenumber@mobile.surewest.com
+
+T-Mobile
+
+    10digitphonenumber@tmomail.net
+
+Telus
+
+    10digitphonenumber@msg.telus.com
+
+Triton
+
+    10digitphonenumber@tms.suncom.com
+
+Unicel
+
+    10digitphonenumber@utext.com
+
+US Cellular
+
+    10digitphonenumber@email.uscc.net
+
+US West
+
+    10digitphonenumber@uswestdatamail.com
+
+Verizon
+
+    10digitphonenumber@vtext.com
+
+Virgin Mobile
+
+    10digitphonenumber@vmobl.com
+
+Virgin Mobile Canada
+
+    10digitphonenumber@vmobile.ca
+
+West Central Wireless
+
+    10digitphonenumber@sms.wcc.net
+
+Western Wireless
+
+    10digitphonenumber@cellularonewest.com
