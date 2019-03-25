@@ -38,7 +38,7 @@ Your browser does not support the video tag.
 
 <br><br>
 
-<form action="../index.php">
+<form action="../email.php">
     <input type="submit" value="Compose Email" />
 
 <br>
