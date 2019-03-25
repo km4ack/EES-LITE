@@ -5,12 +5,13 @@
 #20190325 km4ack
 
 #create additional directories
-#mkdir -p /var/www/html/emails
-#mkdir -p /var/www/html/replies
-#chmod 777 /var/www/html/emails
-#chmod 777 /var/www/html/replies
+#needed for EES server
+mkdir -p /var/www/html/emails
+mkdir -p /var/www/html/replies
+chmod 777 /var/www/html/emails
+chmod 777 /var/www/html/replies
 
 #remove first run script
-#rm /var/www/html/firstrun
+rm /var/www/html/firstrun
 
 exit 0
