@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#add movetopat to cron
+#20190325 km4ack
+
+#make temp dir
+mkdir -p $HOME/temp
+#list crontab to text file
+crontab -l > $HOME/temp/crontemp.txt
+#add new cron job
+echo "*/1 * * * * /var/www/html/movetopat" >> $HOME/temp/crontemp.txt
+#import cron with new job
+crontab $HOME/temp/crontemp.txt
+#remove temp file
+rm $HOME/temp/crontemp.txt
+
+exit 0
