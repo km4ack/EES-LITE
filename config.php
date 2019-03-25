@@ -6,8 +6,8 @@
 //on the system. Only change what is
 //between the ''. Be sure to leave the ''
 
-//reminder to activate script
-$reminder = 'DONT FORGET TO ACTIVATE MOVETOPAT IN CRON';
+//reminder seen on the reply-input.php page
+$reminder = 'REMINDER FOR OPERATOR TO DO SOMETHING';
 
 //login for admin control panel
 $userlogin = 'admin';
