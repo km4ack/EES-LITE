@@ -11,7 +11,7 @@
 
 
 #sets the MYCALL variable by reading the info from ~/.wl2k/config.json file for the configured operator.
-MYCALL=$(awk '/"mycall": "/{print}' $HOME/.wl2k/config.json |grep -o -P '(?<=mycall": ").*(?=",)')
+MYCALL=$(awk '/"mycall": "/{print}' $HOME/.wl2k/config.json |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
 
 CHECK=$(ls /var/www/html/emails/)
 
