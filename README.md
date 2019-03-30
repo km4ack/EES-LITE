@@ -35,6 +35,6 @@ User webpage - pi-ip-addy/email.php
   
 Operator webpage - pi-ip-addy/reply-input.php
 
-#### This code has only been confirmed to install correctly on Stretch. It should work on other distros but the install may differ from the video listed above.
+#### This code has only been confirmed to install correctly on Stretch. It should work on other distros but the install may differ from the instruction presented in the install video.
 
 73, KM4ACK
