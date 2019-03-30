@@ -15,6 +15,8 @@ chmod 777 /var/www/html/replies
 chmod +x movetopat
 #make schedule exec
 chmod +x schedule
+#make autopostreply exec
+chmod +x autopostreply
 
 #create backup of config.php file
 cp /var/www/html/config.php /var/www/html/config.php.org
