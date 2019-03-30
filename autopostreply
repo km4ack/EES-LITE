@@ -25,6 +25,13 @@ IN=$HOME/.wl2k/mailbox/$MYCALL/in/
 #Set Archive Folder of Pat
 ARCHIVE=$HOME/.wl2k/mailbox/$MYCALL/archive/
 
+#Check for new incoming mail
+MAIL=$(ls $IN)
+if [ -z "$MAIL" ];
+then
+exit 0
+fi
+
 #copy incoming email to temp folder
 cp $IN* $TEMPOUT
 #move emails from inbox to archive folder
@@ -43,8 +50,6 @@ FROM=$(grep From: $file | cut -b 7-50)
 BODY=$(tail -n +9 $file)
 #set file name
 FILENAME=$TODAY-$FROM.php
-#create reply file in php format
-touch $OUT$FILENAME
 #send php/html data to file
 echo '<head><title>Reply</title><link rel="stylesheet" type="text/css"href="/style.css"></head>' >> $OUT$FILENAME
 echo "<?php include('/var/www/html/config.php') ?>" >> $OUT$FILENAME
