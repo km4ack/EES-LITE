@@ -1,5 +1,3 @@
-![EES Logo](https://www.dropbox.com/s/gfnl6uks1evaly7/ees-lite.png?dl=0)
-
 # Emergency Email Server Lite 
 
 Winlink Emergency Email Server Lite for Raspberry Pi
