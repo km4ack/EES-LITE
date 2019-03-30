@@ -9,6 +9,7 @@ mkdir -p $HOME/temp
 crontab -l > $HOME/temp/crontemp.txt
 #add new cron job
 echo "*/1 * * * * /var/www/html/movetopat" >> $HOME/temp/crontemp.txt
+echo "#*/1 * * * * /var/www/html/autopostreply" >> $HOME/temp/crontemp.txt
 #import cron with new job
 crontab $HOME/temp/crontemp.txt
 #remove temp file
