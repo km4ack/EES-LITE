@@ -1,0 +1,76 @@
+#!/bin/bash
+
+#This script is designed to automatically
+#copy emails from the inbox of Pat Winlink
+#to the reply folder of the EES. It will then
+#move the emails out of the Pat Winklink inbox
+#and move them to the archive folder of Pat.
+#This script can be run by cron or manually.
+#To run by cron, uncomment the line below in cron
+#*/1 * * * * /var/www/html/autopostreply
+#20190329 km4ack
+ 
+#set date to use in email
+EMAILDATE=$(date +%Y%m%d-%H%M)
+#get operator callsign
+MYCALL=$(awk '/"mycall": "/{print}' $HOME/.wl2k/config.json |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
+#make temp dir
+mkdir -p $HOME/tempemail
+#Set temp dir
+TEMPOUT=$HOME/tempemail/
+#set output dir
+OUT=/var/www/html/replies/
+#set input dir
+IN=$HOME/.wl2k/mailbox/$MYCALL/in/
+#Set Archive Folder of Pat
+ARCHIVE=$HOME/.wl2k/mailbox/$MYCALL/archive/
+
+#copy incoming email to temp folder
+cp $IN* $TEMPOUT
+#move emails from inbox to archive folder
+mv $IN* $ARCHIVE
+
+#begin processing files
+for file in $TEMPOUT*
+do
+#Set date to use as part of filename
+TODAY=$(date +%Y%m%d-%H%M%N)
+#remove dos characters from emails
+sed -i 's/\r$//' $file
+#get who email is from
+FROM=$(grep From: $file | cut -b 7-50)
+#get body of email
+BODY=$(tail -n +9 $file)
+#set file name
+FILENAME=$TODAY-$FROM.php
+#create reply file in php format
+touch $OUT$FILENAME
+#send php/html data to file
+echo '<head><title>Reply</title><link rel="stylesheet" type="text/css"href="/style.css"></head>' >> $OUT$FILENAME
+echo "<?php include('/var/www/html/config.php') ?>" >> $OUT$FILENAME
+echo "<body>" >> $OUT$FILENAME
+echo '<h1><?php echo $callsign ?>  Emergency Email Server<br>Amateur Radio Emergency Services</h1>' >> $OUT$FILENAME
+echo "<br>" >> $OUT$FILENAME
+echo "<hr>" >> $OUT$FILENAME
+echo "<br>" >> $OUT$FILENAME
+echo "<br><strong>Message Posted at $EMAILDATE</strong><br><br><br>" >> $OUT$FILENAME
+echo '<form action="/search.php"><input type="submit" value="Search Again" /></form>' >> $OUT$FILENAME
+#Send message data to file
+echo "<br>This message is from $FROM<br>" >> $OUT$FILENAME
+echo "<br>========BEGIN MESSAGE=============" >> $OUT$FILENAME
+echo "<br><br>" >> $OUT$FILENAME
+echo $BODY >> $OUT$FILENAME
+echo "<br><br>" >> $OUT$FILENAME
+echo "========END MESSAGE===============<br><br>" >> $OUT$FILENAME
+#Send php/html data to file
+echo '<form action="/search.php"><input type="submit" value="Search Again" /></form>' >> $OUT$FILENAME
+echo "</body>" >> $OUT$FILENAME
+echo "#*/1 * * * * /var/www/html" >> $OUT$FILENAME
+done
+
+#remove temp files
+rm $TEMPOUT*
+#remove temp folder
+rm -rf $TEMPOUT
+
+exit 0
