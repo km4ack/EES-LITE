@@ -27,7 +27,7 @@ Finding ARDOP Stations https://youtu.be/Xdp3iovC8ws
 
 ### Install Video - https://youtu.be/KaEeCq50Mno
 
-## Splash Screen (added 20190406)
+## Splash Screen-Optional (added 20190406)
 If you installed the EES before April 6, 2019 and would like to add a splash screen for your visitors, run each of the commands below.
 
     cd /var/www/html
@@ -43,6 +43,8 @@ If you downloaded on or after April 6, 2019 and would like a splash screen then 
 After installing the splash screen, if you want to change the splash screen welcome message, edit splash.txt
 
     sudo nano splash.txt
+    
+After installing the splash screen, your visitor will see it when they visit your EES at http://pi-ip-addy
 
 ## Other Info
 default user - admin
