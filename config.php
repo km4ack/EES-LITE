@@ -9,10 +9,10 @@
 //reminder seen on the reply-input.php page
 $reminder = 'REMINDER FOR OPERATOR TO DO SOMETHING';
 
-//login for admin control panel
+//login for posting replies
 $userlogin = 'admin';
 
-//passwd for admin control panel
+//passwd for posting replies
 $userpasswd = 'admin';
 
 //callsign of radio operator ALL UPPERCASE
