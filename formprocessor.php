@@ -47,7 +47,7 @@ if ($replies > 0) {
 $name = $_POST["name"];
 $email = $_POST["email"];
 $body = $_POST["body"];
-$subject = $_POST["subject"];
+$subject = "MSG from ".$name." ".$_POST["subject"];
 $body = "This message is from ".$name."\r\n\r\n Begin Message \r\n=================================\r\n".$body."\r\n=================================\r\n End Message";
 //add footer to body
 $newbody = $body."\r\n"."\r\n".$footer;
