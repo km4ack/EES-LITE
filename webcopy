@@ -6,7 +6,7 @@
 #This should be run by cron every minute
 #20200229 km4ack
 
-FILECHECK=$(diff ~/Documents/info.html /var/www/html/info.html)
+FILECHECK=$(diff ~/Documents/info.html /var/www/html/index.html)
 
 #check file to see if it has changed. Copy if new
 #Don't copy if no changes exist. This will save
@@ -16,3 +16,4 @@ then
 echo
 else
 sudo cp $HOME/Documents/info.html /var/www/html/index.html
+fi
