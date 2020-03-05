@@ -1,9 +1,3 @@
-![](http://10.10.10.10/ees-lite-logo1.png)
-
-# [Send Email/Check Replies](http://10.10.10.10/email.php) | [Operator Login](http://10.10.10.10/login.php)
-
-# 20200229 0910
-
 ## Use the "Send Email/Check Replies" link above to compose your email or check for replies to emails you have already sent. Updates will also be published below as they become available. 
 
 > # Purpose
