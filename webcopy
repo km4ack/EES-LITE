@@ -15,5 +15,9 @@ if [ -z "$FILECHECK" ]
 then 
 echo
 else
-sudo cp $HOME/Documents/info.html /var/www/html/index.html
+touch $HOME/temp.html
+cat /var/www/html/header > $HOME/temp.html
+cat $HOME/Documents/info.html >> $HOME/temp.html
+sudo cp $HOME/temp.html /var/www/html/index.html
+rm $HOME/temp.html
 fi
