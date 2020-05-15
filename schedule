@@ -4,26 +4,34 @@
 #movetopat is on by default
 #autopostreply is off by default
 #20190325 km4ack
-#20200229 km4ack
+#20200515 km4ack
 
+#check if build-a-pi install
+BAP=$(ls $HOME/.config | grep KM4ACK)
+if [ -z "$BAP" ]; then
 #make temp dir
 mkdir -p $HOME/temp
+TEMPCRON=$HOME/temp/crontemp.txt
+crontab -l > $TEMPCRON
+fi
+
 #copy crontab to text file
-crontab -l > $HOME/temp/crontemp.txt
 #add new cron job and notes
-echo "#-----Start EES Server Options------" >> $HOME/temp/crontemp.txt
-echo "#Move EES email to Pat Winlink Outbox" >> $HOME/temp/crontemp.txt
-echo "*/1 * * * * /var/www/html/movetopat" >> $HOME/temp/crontemp.txt
-echo " " >> $HOME/temp/crontemp.txt
-echo "#Auto post replies for EES server" >> $HOME/temp/crontemp.txt
-echo "#Default is off. Activate by removing # on line below" >> $HOME/temp/crontemp.txt
-echo "#*/1 * * * * /var/www/html/autopostreply" >> $HOME/temp/crontemp.txt
-echo "#Line below moves info.html to index.html when modified" >> $HOME/temp/crontemp.txt
-echo "*/1 * * * * /home/pi/bin/webcopy" >> $HOME/temp/crontemp.txt
-echo "#-----End EES Server Options------" >> $HOME/temp/crontemp.txt
+echo "#-----Start EES Server Options------" >> $TEMPCRON
+echo "#Move EES email to Pat Winlink Outbox" >> $TEMPCRON
+echo "*/1 * * * * /var/www/html/movetopat" >> $TEMPCRON
+echo " " >> $TEMPCRON
+echo "#Auto post replies for EES server" >> $TEMPCRON
+echo "#Default is off. Activate by removing # on line below" >> $TEMPCRON
+echo "#*/1 * * * * /var/www/html/autopostreply" >> $TEMPCRON
+echo "#Line below moves info.html to index.html when modified" >> $TEMPCRON
+echo "*/1 * * * * /home/pi/bin/webcopy" >> $$TEMPCRON
+echo "#-----End EES Server Options------" >> $$TEMPCRON
+if [ -z "$BAP" ]; then
 #import cron with new job
 crontab $HOME/temp/crontemp.txt
 #remove temp file
 rm $HOME/temp/crontemp.txt
+fi
 
 exit 0
