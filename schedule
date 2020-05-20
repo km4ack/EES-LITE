@@ -6,14 +6,12 @@
 #20190325 km4ack
 #20200515 km4ack
 
-#check if build-a-pi install
-BAP=$(ls $HOME/.config | grep KM4ACK)
-if [ -z "$BAP" ]; then
+
 #make temp dir
 mkdir -p $HOME/temp
 TEMPCRON=$HOME/temp/crontemp.txt
 crontab -l > $TEMPCRON
-fi
+
 
 #copy crontab to text file
 #add new cron job and notes
@@ -27,11 +25,10 @@ echo "#*/1 * * * * /var/www/html/autopostreply" >> $TEMPCRON
 echo "#Line below moves info.html to index.html when modified" >> $TEMPCRON
 echo "*/1 * * * * /home/pi/bin/webcopy" >> $$TEMPCRON
 echo "#-----End EES Server Options------" >> $$TEMPCRON
-if [ -z "$BAP" ]; then
-#import cron with new job
+
 crontab $HOME/temp/crontemp.txt
 #remove temp file
 rm $HOME/temp/crontemp.txt
-fi
+
 
 exit 0
