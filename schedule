@@ -26,9 +26,9 @@ echo "#Line below moves info.html to index.html when modified" >> $TEMPCRON
 echo "*/1 * * * * /home/pi/bin/webcopy" >> $TEMPCRON
 echo "#-----End EES Server Options------" >> $TEMPCRON
 
-#crontab $HOME/temp/crontemp.txt
+crontab $HOME/temp/crontemp.txt
 #remove temp file
-#rm $HOME/temp/crontemp.txt
+rm $HOME/temp/crontemp.txt
 
 
 exit 0
