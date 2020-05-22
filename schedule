@@ -10,7 +10,7 @@
 #make temp dir
 mkdir -p $HOME/temp
 TEMPCRON=$HOME/temp/crontemp.txt
-crontab -l > $TEMPCRON
+crontab -l >> $TEMPCRON
 
 
 #copy crontab to text file
