@@ -23,8 +23,8 @@ echo "#Auto post replies for EES server" >> $TEMPCRON
 echo "#Default is off. Activate by removing # on line below" >> $TEMPCRON
 echo "#*/1 * * * * /var/www/html/autopostreply" >> $TEMPCRON
 echo "#Line below moves info.html to index.html when modified" >> $TEMPCRON
-echo "*/1 * * * * /home/pi/bin/webcopy" >> $$TEMPCRON
-echo "#-----End EES Server Options------" >> $$TEMPCRON
+echo "*/1 * * * * /home/pi/bin/webcopy" >> $TEMPCRON
+echo "#-----End EES Server Options------" >> $TEMPCRON
 
 crontab $HOME/temp/crontemp.txt
 #remove temp file
