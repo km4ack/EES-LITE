@@ -9,11 +9,13 @@
 #To run by cron, uncomment the line below in cron
 #*/1 * * * * /var/www/html/autopostreply
 #20190329 km4ack
+
+CONFIG=$XDG_CONFIG_HOME/pat/config.json
  
 #set date to use in email
 EMAILDATE=$(date +%Y%m%d-%H%M)
 #get operator callsign
-MYCALL=$(awk '/"mycall": "/{print}' $HOME/.wl2k/config.json |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
+MYCALL=$(awk '/"mycall": "/{print}' $CONFIG |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
 #make temp dir
 mkdir -p $HOME/tempemail
 #Set temp dir
@@ -21,9 +23,9 @@ TEMPOUT=$HOME/tempemail/
 #set output dir
 OUT=/var/www/html/replies/
 #set input dir
-IN=$HOME/.wl2k/mailbox/$MYCALL/in/
+IN=$HOME/.local/share/pat/mailbox/$MYCALL/in/
 #Set Archive Folder of Pat
-ARCHIVE=$HOME/.wl2k/mailbox/$MYCALL/archive/
+ARCHIVE=$HOME/.local/share/pat/mailbox/$MYCALL/archive/
 
 #Check for new incoming mail
 MAIL=$(ls $IN)
