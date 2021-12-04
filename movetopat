@@ -10,7 +10,7 @@
 #script should be run by cron every
 #minute.
 
-CONFIG=$XDG_CONFIG_HOME/pat/config.json
+CONFIG=/home/pi/.config/pat/config.json
 
 #sets the MYCALL variable by reading the info from ~/.wl2k/config.json file for the configured operator.
 MYCALL=$(awk '/"mycall": "/{print}' $CONFIG |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
