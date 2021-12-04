@@ -6,12 +6,14 @@
 #over the air.
 #20180406 km4ack
 #20190106 edited by kf7itf
+#20211203 edited by KM4ACK
 #script should be run by cron every
 #minute.
 
+CONFIG=$XDG_CONFIG_HOME/pat/config.json
 
 #sets the MYCALL variable by reading the info from ~/.wl2k/config.json file for the configured operator.
-MYCALL=$(awk '/"mycall": "/{print}' $HOME/.wl2k/config.json |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
+MYCALL=$(awk '/"mycall": "/{print}' $CONFIG |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
 
 CHECK=$(ls /var/www/html/emails/)
 
@@ -22,7 +24,7 @@ then
 exit 0
 else
 #move the files if found
-sudo mv /var/www/html/emails/*.b2f $HOME/.wl2k/mailbox/$MYCALL/out
+sudo mv /var/www/html/emails/*.b2f $HOME/.local/share/pat/mailbox/$MYCALL/out
 fi
 
 
