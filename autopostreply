@@ -10,7 +10,8 @@
 #*/1 * * * * /var/www/html/autopostreply
 #20190329 km4ack
 
-CONFIG=$XDG_CONFIG_HOME/pat/config.json
+
+CONFIG=/home/pi/.config/pat/config.json
  
 #set date to use in email
 EMAILDATE=$(date +%Y%m%d-%H%M)
