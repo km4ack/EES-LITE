@@ -7,28 +7,23 @@
 #20180406 km4ack
 #20190106 edited by kf7itf
 #20211203 edited by KM4ACK
+#20221223 edited by KQ4AFY
 #script should be run by cron every
 #minute.
 
-CONFIG=/home/pi/.config/pat/config.json
-
-#sets the MYCALL variable by reading the info from ~/.wl2k/config.json file for the configured operator.
-MYCALL=$(awk '/"mycall": "/{print}' $CONFIG |grep -o -P '(?<=mycall": ").*(?=",)' | tr '[:lower:]' '[:upper:]')
+# sets environment variables from pat
+eval $(pat env)
 
 CHECK=$(ls /var/www/html/emails/)
 
 #check if files are in directory
 if [ -z "$CHECK" ]
 then
-#exit if files not found
-exit 0
+    #exit if files not found
+    exit 0
 else
-#move the files if found
-sudo mv /var/www/html/emails/*.b2f $HOME/.local/share/pat/mailbox/$MYCALL/out
+    #move the files if found
+    sudo mv /var/www/html/emails/*.b2f ${PAT_MAILBOX_PATH}/${PAT_MYCALL}/out/
 fi
-
-
-
-
 
 exit 0
